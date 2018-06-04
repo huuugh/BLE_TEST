@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="4dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp">
+
+    <ImageView
+        android:id="@+id/imgv_logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_bluetooth_black_36dp"/>
+
+    <TextView
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@id/imgv_logo"
+        android:id="@+id/txtv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Ble name"
+        android:layout_centerVertical="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:text="连接"
+        android:background="@android:color/transparent"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+</RelativeLayout>
